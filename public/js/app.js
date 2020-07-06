@@ -12,8 +12,8 @@ weatherForm.addEventListener('submit', (e) => {
 
     const location = search.value
 
-
-    fetch('/weather?address=' + location).then((response) => {
+    // http://localhost:5000/index/
+    fetch('weather?address=' + location).then((response) => {
         response.json().then((data) => {
          var   lati=data.latitude
          var   longi=data.longitude
